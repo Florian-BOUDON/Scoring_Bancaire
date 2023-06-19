@@ -11,7 +11,7 @@ import json
 import os
 
 
-df = pd.read_csv("/data/df_streamlit.csv", index_col="SK_ID_CURR")
+df = pd.read_csv("data/df_streamlit.csv", index_col="SK_ID_CURR")
 df_post = df.copy()
 
 with open('dictionnaire.pickle', 'rb') as fichier:
