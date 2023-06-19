@@ -11,7 +11,8 @@ import json
 import os
 
 # Load data
-df = pd.read_csv("./data/df_streamlit.csv", index_col="SK_ID_CURR")
+url="https://raw.githubusercontent.com/Florian-BOUDON/Scoring_Bancaire/master/Dashboard_streamlit/data/df_streamlit.csv"
+df = pd.read_csv(url, index_col="SK_ID_CURR")
 df_post = df.copy()
 
 with open('dictionnaire.pickle', 'rb') as fichier:
