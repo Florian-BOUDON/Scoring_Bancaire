@@ -103,7 +103,7 @@ def page_accueil():
         if st.button("Prediction_post"):
             client_dict = client.to_dict()
             st.write(client_dict)
-            url_post = "https://app-scoring-heroku.herokuapp.com///prediction"
+            url_post = "https://app-scoring-heroku.herokuapp.com////prediction"
             response = requests.post(url_post, json=client_dict)
             st.write(response.json())
         
@@ -111,7 +111,7 @@ def page_accueil():
         
         # Requête get api heroku
         if st.sidebar.button("Prediction"):
-            url = f"https://app-scoring-heroku.herokuapp.com///data?proba={id_client}"
+            url = f"https://app-scoring-heroku.herokuapp.com////data?proba={id_client}"
             response = requests.get(url)
             if response.status_code == 200:
                     # Affichage de la réponse
