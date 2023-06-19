@@ -11,10 +11,7 @@ import json
 import os
 
 # Load data
-csv_path = os.path.abspath("df_streamlit.csv")
-
-# Chargez le fichier CSV en utilisant le chemin absolu
-df = pd.read_csv(csv_path, index_col="SK_ID_CURR")
+df = pd.read_csv("./data/Streamlit.csv", index_col="SK_ID_CURR")
 df_post = df.copy()
 
 with open('dictionnaire.pickle', 'rb') as fichier:
