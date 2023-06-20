@@ -12,14 +12,15 @@ class FlaskAPITest(unittest.TestCase):
         # Test de la requête GET avec une bonne clé dans l'URL
         good_key = 'proba=126367'
         response = requests.get(self.base_url + '/data?' + good_key)
-        
+
         if response.status_code == 200:
             result = response.json()
+            probability = result['acc']
             # Vérifier si le résultat est compris entre 0 et 1
-            if 0 <= result <= 1:
-                print('Résultat valide :', result)
+            if 0 <= probability <= 1:
+                print('Résultat valide :', probability)
             else:
-                print('Résultat invalide :', result)
+                print('Résultat invalide :', probability)
         else:
             print('Erreur lors de la requête GET')
 
@@ -58,6 +59,8 @@ class FlaskAPITest(unittest.TestCase):
         
         if response.status_code == 200:
             result = response.json()
+            probability = result['probability']
+
             # Vérifier la réponse de l'API ici...
             print(result)
         else:
