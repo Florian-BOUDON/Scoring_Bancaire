@@ -9,7 +9,7 @@ Cette partie contient principalement le notebook de preprocessing et de modélis
 ## Fonctionnalités
 
 - Dashboard interactif basé sur **Streamlit**.
-- API déployée sur Heroku pour recevoir des requêtes GET et renvoyer des prédictions basé sur le Framework **FLASK**.
+- API (**FLASK**) déployée sur **heroku** pour recevoir des requêtes GET et renvoyer des prédictions.
 - Modèle de machine learning pré-entraîné utilisé pour les prédictions.
 
 ## Structure du projet
