@@ -1,7 +1,8 @@
 # Projet de machine learning avec dashboard interactif et API
 
 Ce projet de machine learning comprend un dashboard interactif développé avec Streamlit et une API déployée sur Heroku. L'objectif de ce projet est de fournir des prédictions basées sur un modèle de machine learning entraîné.
-Ce projet est inspiré de la compétition kaggle https://www.kaggle.com/competitions/home-credit-default-risk/
+Ce projet est inspiré de la compétition **kaggle** :    
+https://www.kaggle.com/competitions/home-credit-default-risk/
 
 ## Partie machine learning
 Cette partie contient principalement le notebook de preprocessing et de modélisation ainsi que tous les fichiers qui seront utilisés dans la seconde partie (API et Dashboard)
