@@ -1,6 +1,7 @@
 # Projet de machine learning avec dashboard interactif et API
 
 Ce projet de machine learning comprend un dashboard interactif développé avec **streamlit** et une API déployée sur **heroku**. L'objectif de ce projet est de fournir des prédictions basées sur un modèle de machine learning entraîné.
+
 Ce projet est inspiré de la compétition **kaggle** :    
 https://www.kaggle.com/competitions/home-credit-default-risk/
 
@@ -19,7 +20,7 @@ Le projet est organisé comme suit :
 
 - dasboard (streamlit)
     -  `streamlit_App.py`: fichier principal pour le dashboard interactif développé avec streamlit.
-    -  `dictionnaire.pickle`: permet d'inverser label-encoder et reccupérer les noms des classes de chaque variable
+    -  `dictionnaire.pickle`: permet d'inverser label-encoder et récupérer les noms des classes de chaque variable.
     -  `requirements.txt`: fichier listant les dépendances python requises pour exécuter le projet.
 
 - les autres fichiers (API)
@@ -39,7 +40,7 @@ https://github.com/Florian-BOUDON/Scoring_Bancaire_Machine_Learning
 ## Les grandes étapes
 
 1. **Collecte des données** : merging des tables.
-2. **Exploration des données** : analyse exploratoire des données pour comprendre leur structure, leurs caractéristiques et effectuer des prétraitements si nécessaire.
+2. **Exploration des données** : analyse exploratoire des données pour comprendre leur structure, leurs caractéristiques et effectuer des pré-traitements si nécessaire.
 3. **Entraînement du modèle** : sélection d'un algorithme de machine learning, division des données en ensembles d'entraînement et de test, entraînement du modèle sur les données d'entraînement.
 4. **Évaluation du modèle** : évaluation des performances du modèle à l'aide de métriques appropriées et ajustement des hyperparamètres création d'une fonction de perte.
 5. **Développement du dashboard** : création d'un dashboard interactif.
